@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img{ max-width:100%; }
+/*Logo and Header*/
+.logo img{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+header {
+    width:100%;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left:200px;
+}
+ul li {
+  list-style: none;
+}
+/*Navigation*/
+.nav {
+  position:fixed;
+  top:0;
+  left:0;
+  background-color: rgb(239,68,54);
+  width:200px;
+  padding-bottom:9999px;
+  margin-bottom:-9999px;
+}
+.nav a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+  padding: 30px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.nav a:hover {
+  background-color: rgb(189, 32, 48);
+}
+.nav a:active {
+color: rgb(250, 237, 42);
+}
+/*Main*/
+main{
+  padding-left:200px;
+  padding-top: 50px;
+}
+main p{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: Josefin Sans;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+main img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+.games-list{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.games-list li{
+  align-items: stretch;
+  margin:5px;
+  background:#000;
+}
+
+body {
+  background-image: url("images/rebecca-oliver-483486-unsplash.jpg");
+  background-size: 100%;
+  background-color: black;
+  width:100%;
+   position:relative;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center; /* Keeps the image centered for resizing, but you can change this - top left, bottom right, top center.... etc. */
+}
+/*Footer*/
+
+footer{
+  width:100%;
+ /* Keeps footer on the bottom, but would obscure content - I suggest you use this setting for the home page, and then on all interior pages give the footer a class that removes this, so the footer sits below the content instead of staying fixed on the browser window */
+  bottom:0;
+  padding-bottom: 30px;
+}
+footer ul {
+  color: white;
+  text-align: center;
+  font-family: Josefin Sans;
+  margin-left: 200px;
+  height: 50px;
+  padding-top:25px;
+  padding-bottom:40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+footer ul{
+    padding:20px;
+    flex-flow: row wrap;
+  }
+
+footer ul li img {
+  width:30px;
+  padding: 2.5px;
+}
+
+footer ul li {
+    width:auto; /* Has the footer move back into a row */
+}
+@media only screen and (max-width: 630px) {
+  header {
+    padding-left: 0px;
+  }
+  .logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding-bottom: 30px;
+  }
+
+  .nav {
+    position: static;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    width: 0;
+    display: inline;
+  }
+  .nav a {
+    text-align: none;
+    align-items: none;
+    justify-content: none;
+    padding: 20px;
+  }
+  main {
+    padding-left: 0;
+    padding-bottom: 100px;
+    padding-top: 80px;
+  }
+
+  main p{
+    font-size: 50px;
+  }
+  footer {
+    position: static;
+    }
+  footer ul{
+    margin-left: 0px;
+    flex-flow: column;
+  }
+  footer ul li {
+    padding:5px;
+  }
+}
+footer a {
+  text-decoration: none;
