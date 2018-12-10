@@ -63,10 +63,20 @@ main p{
   font-style: italic;
   font-family: Josefin Sans;
 }
-.index {
+.index ul{
   color:white;
   text-decoration: none:
-}
+  }
+  .index li a {
+    text-decoration: none;
+  }
+  .index li a:hover {
+    background-color: rgb(189, 32, 48);
+  }
+  .index li a:active {
+  color: rgb(250, 237, 42);
+  }
+
 body {
   background-image: url("images/rebecca-oliver-483486-unsplash.jpg");
   background-size: 100%;
