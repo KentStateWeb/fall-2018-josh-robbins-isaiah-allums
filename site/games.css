@@ -80,11 +80,18 @@ main img {
   margin:5px;
   background:#000;
 }
-
+@media only screen and (max-width: 1000px) {
+  .games-list {
+    display: inline;
+  }
+.games-list li {
+    background: none;
+    align-items: center;
+  }
+}
 body {
-  background-image: url("images/rebecca-oliver-483486-unsplash.jpg");
   background-size: 100%;
-  background-color: black;
+  background-color: rgb(251,175,65);
   width:100%;
    position:relative;
    min-height: 100vh;

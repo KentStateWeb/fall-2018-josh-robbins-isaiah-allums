@@ -1,10 +1,20 @@
+body {
+  text-align:center;
+}
+h3 {
+  font-size:1.5em;
+}
+
+p {
+  text-transform:bold;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-img{ max-width:100%; }
 /*Logo and Header*/
 .logo img{
   width: 300px;
@@ -49,26 +59,35 @@ ul li {
 .nav a:active {
 color: rgb(250, 237, 42);
 }
-
 /*Main*/
-main{
-  padding-left:200px;
+main {
+  margin-left:200px;
   padding-top: 150px;
-}
-main p{
+  padding: 1em;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
-  font-size: 70px;
   color: white;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: Josefin Sans;
+  padding-bottom: 50px;
+
 }
-.index {
-  color:white;
-  text-decoration: none:
+  main h1 {
+    font-family: Josefin Sans;
+    text-transform: uppercase;
+    font-size: 400%;
+    padding-bottom: 50px;
+    color: white;
+    font-weight: bold;
+  }
+  main h3 {
+    font-family: Josefin Sans;
+    color: rgb(250, 237, 42);
+  }
+p  {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 body {
-  background-image: url("images/rebecca-oliver-483486-unsplash.jpg");
+
   background-size: 100%;
   background-color: black;
   width:100%;
@@ -81,7 +100,7 @@ body {
 
 footer{
   width:100%;
-  position:fixed; /* Keeps footer on the bottom, but would obscure content - I suggest you use this setting for the home page, and then on all interior pages give the footer a class that removes this, so the footer sits below the content instead of staying fixed on the browser window */
+ /* Keeps footer on the bottom, but would obscure content - I suggest you use this setting for the home page, and then on all interior pages give the footer a class that removes this, so the footer sits below the content instead of staying fixed on the browser window */
   bottom:0;
   padding-bottom: 30px;
 }
@@ -139,12 +158,9 @@ footer ul li {
   }
   main {
     padding-left: 0;
-    margin: 0;
+    margin-left: 0;
     padding-bottom: 100px;
     padding-top: 80px;
-  }
-  main p{
-    font-size: 50px;
   }
   footer {
     position: static;
@@ -159,4 +175,3 @@ footer ul li {
 }
 footer a {
   text-decoration: none;
-}
